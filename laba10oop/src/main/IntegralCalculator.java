@@ -20,7 +20,7 @@ public class IntegralCalculator {
     public double calculate() {
         double h = (b-a)/n;
         double sum = 0;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n-1; i++) {
             double t = a + i*h;
             sum += f.applyAsDouble(t)*h;
         }
