@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controller">
+   <center>
+       <AnchorPane prefHeight="400.0" prefWidth="600.0">
+           <TextField fx:id="namestep" layoutX="34.0" layoutY="-13.0" />
+           <TextField fx:id="nameThread" layoutX="34.0" layoutY="21.0" />
+           <Label fx:id="result" layoutX="197.0" layoutY="-9.0" prefHeight="18.0" prefWidth="228.0" text="Результат" />
+           <Label fx:id="time" layoutX="197.0" layoutY="13.0" prefHeight="18.0" prefWidth="252.0" text="Время" />
+           <Button layoutX="34.0" layoutY="58.0" mnemonicParsing="false" onAction="#run" text="Начать" />
+       </AnchorPane>
+   </center>
+   <top>
+       <VBox prefHeight="52.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+           <MenuBar>
+               <Menu mnemonicParsing="false" text="File">
+                   <MenuItem mnemonicParsing="false" onAction="#exit" text="Close" />
+               </Menu>
+               <Menu mnemonicParsing="false" text="Edit">
+                   <MenuItem mnemonicParsing="false" text="Delete" />
+               </Menu>
+               <Menu mnemonicParsing="false" text="Help">
+                   <MenuItem mnemonicParsing="false" text="About" />
+               </Menu>
+           </MenuBar>
+       </VBox>
+   </top>
+</BorderPane>
